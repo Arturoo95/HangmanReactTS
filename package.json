@@ -2,10 +2,10 @@
   "name": "hangman",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/Arturoo95/HangmanReactTS",
+  "homepage": "https://arturoo95.github.io/HangmanReactTS/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "vite build && gh-pages -d dist",
+    "predeploy": "del /q /s dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
